@@ -1,0 +1,125 @@
+body {
+  max-width: 1040px;
+  margin: 10px;
+  font-family: Arial;
+  color: #464954;
+  background-color: #fbf7f4;
+}
+/* -------------------- */
+
+body,html {
+  height:100%;
+  background:#42A5F5;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+svg {
+ 
+ height:100px; 
+ margin:20px auto;
+}
+.button {
+  margin:20px auto;
+  background:#FFF;
+  display:block;
+  padding:5px 20px;
+  width:200px;
+}
+a {
+  text-decoration:none;
+  color:#333;
+  font-size:16px;
+}
+a:hover,a:focus {
+  text-decoration:none;
+  color:#333;
+}
+.draw-hammer {
+  stroke: #FFFFFF;
+  stroke-width: 0.8311;
+  stroke-dasharray: 175px;
+  stroke-dashoffset: 175px;
+  animation-name: draw;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+.hammer-fill {
+  stroke:#FFFFFF;
+  animation-name: stand;
+  stroke-dasharray: 125px;
+  stroke-dashoffset: 125px;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes stand {
+  50% {
+    fill:transparent;
+  }
+  65% {
+    fill: #FFFFFF;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #FFFFFF;
+  }
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/* --------------------------------------------- */
+
+a {
+  color: #6f041d;
+}
+
+
+div {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+img {
+  max-width: 200px;
+}
+
+input,
+textarea {
+  font-size: 1rem;
+  display: block;
+  margin: 1rem;
+  width: 90%;
+  padding: 0.5rem;
+  font-family: inherit;
+}
+
+label {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+button {
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  background: #6f041d;
+  border: none;
+  border-radius: 3px;
+}
+
+.delete {
+  background: unset;
+  margin: unset;
+  border: none;
+  padding: 0;
+  color: #007eb6;
+  cursor: pointer;
+}
